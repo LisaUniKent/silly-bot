@@ -9,6 +9,9 @@ function saySomething() {
 
 	if (message.indexOf("tea") != -1 || message.indexOf("biscuit") != -1 || message.indexOf("drink") != -1)
     answer = "I'd love a cup of tea with a biscuit";
+
+  if (message.indexOf("coffee") != -1 || message.indexOf("donut") != -1 || message.indexOf("chocolate") != -1)
+    answer = "I'd love a cup of coffee with a donut";
   
   	conversation.innerHTML += "<p><strong>You:</strong> " + message + "</p>";
   	conversation.innerHTML += "<p><strong>Useless bot:</strong> " + answer + "</p>";
